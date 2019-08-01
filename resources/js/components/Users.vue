@@ -63,7 +63,9 @@
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            
             <div class="modal-body">
+                <form action="">
                 <div class="form-group">
                     <input v-model="form.name" type="text" name="name"
                         placeholder="Name"
@@ -101,6 +103,7 @@
                         class="form-control" :class="{ 'is-invalid': form.errors.has('password') }">
                     <has-error :form="form" field="password"></has-error>
                 </div>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
